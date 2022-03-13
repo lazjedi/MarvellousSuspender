@@ -145,7 +145,7 @@ var gsSuspendedTab = (function() {
 
     //Check if there are some remote messages
     let remoteMessageEl = _document.getElementById('tmsRemoteMessage');
-    remoteMessageEl.style.paddingTop = '80px';
+    // remoteMessageEl.style.paddingTop = '80px';
     const _remoteMessage = (await hasRemoteMessage(_document));
     if (_remoteMessage.title) {
       remoteMessageEl.style.display = 'block';

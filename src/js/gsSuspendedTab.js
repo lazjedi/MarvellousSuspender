@@ -145,8 +145,9 @@ var gsSuspendedTab = (function() {
 
     //Check if there are some remote messages
     let remoteMessageEl = _document.getElementById('tmsRemoteMessage');
+    remoteMessageEl.style.paddingTop = '80px';
     const _remoteMessage = (await hasRemoteMessage(_document));
-    if (_remoteMessage.title.trim() !== '') {
+    if (_remoteMessage.title) {
       remoteMessageEl.style.display = 'block';
       _document.getElementById('remoteMessageTitle').innerHTML = _remoteMessage.title;
       _document.getElementById('remoteMessageContent').innerHTML = _remoteMessage.content;
@@ -160,8 +161,6 @@ var gsSuspendedTab = (function() {
     } else {
       remoteMessageEl.style.display = 'none';
     }
-
-    remoteMessageEl.style.paddingTop = '80px';
     // Prevent unsuspend by parent container
     // Using mousedown event otherwise click can still be triggered if
     // mouse is released outside of this element
@@ -173,8 +172,13 @@ var gsSuspendedTab = (function() {
   }
 
   async function hasRemoteMessage() {
-    const response = await fetch('https://raw.githubusercontent.com/gioxx/MarvellousSuspender/master/Marvellous-Assets/remote_message.json');
-    return await response.json();
+    try {
+      const response = await fetch('https://raw.githubusercontent.com/gioxx/MarvellousSuspender/master/Marvellous-Assets/remote_message.json');
+      return await response.json();
+    } catch (e) {
+      //error to fetch or the file does not exist
+      return {};
+    }
   }
 
   function setGoToUpdateHandler(_document) {

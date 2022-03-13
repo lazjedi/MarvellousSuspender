@@ -176,15 +176,18 @@ ul.unorderedList li {
     grid-gap: 30px;
 }
 
+.splash.remote-message {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+
 .splash:not(.welcome-message) {
     width: 900px;
 }
 
 .suspendy-guy {
     width: 100%;
-}
-.suspendy-guy.remote-message{
-    width: 75px;
 }
 
 #tmsRemoteMessage > div{

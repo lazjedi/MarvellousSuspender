@@ -183,6 +183,13 @@ ul.unorderedList li {
 .suspendy-guy {
     width: 100%;
 }
+.suspendy-guy.remote-message{
+    width: 75px;
+}
+
+#tmsRemoteMessage > div{
+    background-color: #fff3cd;
+}
 
 #suspendy-guy-inprogress {
     max-height: 220px;

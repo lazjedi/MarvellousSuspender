@@ -145,7 +145,7 @@ var gsSuspendedTab = (function() {
 
     //Check if there are some remote messages
     let remoteMessageEl = _document.getElementById('tmsRemoteMessage');
-    remoteMessageEl.style.display = (await hasRemoteMessage()) ? 'block' : 'none';
+    remoteMessageEl.style.display = (await hasRemoteMessage(_document)) ? 'block' : 'none';
     remoteMessageEl.style.paddingTop = '80px';
     // Prevent unsuspend by parent container
     // Using mousedown event otherwise click can still be triggered if
@@ -157,8 +157,9 @@ var gsSuspendedTab = (function() {
     setGoToUpdateHandler(_document);
   }
 
-  function hasRemoteMessage() {
-    return false;
+  async function hasRemoteMessage() {
+    const response = await fetch('https://raw.githubusercontent.com');
+    return await response.json();
   }
 
   function setGoToUpdateHandler(_document) {

@@ -133,7 +133,7 @@ var gsSuspendedTab = (function() {
     }
   }
 
-  function setTitle(_document, title) {
+  async function setTitle(_document, title) {
     _document.title = title;
     _document.getElementById('gsTitle').innerHTML = title;
     _document.getElementById('gsTopBarTitle').innerHTML = title;
@@ -142,6 +142,11 @@ var gsSuspendedTab = (function() {
     let el = _document.getElementById('tmsUpdateAvailable');
     el.style.display = gsStorage.getOption(gsStorage.UPDATE_AVAILABLE) ? 'block' : 'none';
     el.style.paddingTop = '80px';
+
+    //Check if there are some remote messages
+    let remoteMessageEl = _document.getElementById('tmsRemoteMessage');
+    remoteMessageEl.style.display = (await hasRemoteMessage()) ? 'block' : 'none';
+    remoteMessageEl.style.paddingTop = '80px';
     // Prevent unsuspend by parent container
     // Using mousedown event otherwise click can still be triggered if
     // mouse is released outside of this element
@@ -150,6 +155,10 @@ var gsSuspendedTab = (function() {
     };
 
     setGoToUpdateHandler(_document);
+  }
+
+  function hasRemoteMessage() {
+    return false;
   }
 
   function setGoToUpdateHandler(_document) {

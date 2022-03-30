@@ -84,10 +84,10 @@
         "message": "Orijinal eklentiye dayalıdır"
     },
     "html_about_fork_mid": {
-        "message": "available on GitHub, without ADS tracking"
+        "message": "ADS izleme olmadan GitHub'da erişilebilir"
     },
     "html_about_fork_end": {
-        "message": ", more information available on"
+        "message": ", daha fazla bilgi için"
     },
     "html_about_github_title": {
         "message": "GitHub"
@@ -135,10 +135,10 @@
         "message": "BrowserStack"
     },
     "html_about_browserstack_prefix": {
-        "message": "Ayrıca teşekkürler"
+        "message": "Ayrıca ücretsiz Chrome test araçları sağladığı için"
     },
     "html_about_browserstack_suffix": {
-        "message": "ücretsiz Chrome test araçları sağladığı için."
+        "message": "'e teşekkürler."
     },
     "html_about_tgs_prefix": {
         "message": "Bu uzantı olmadan asla var olamazdı"
@@ -147,28 +147,28 @@
         "message": "."
     },
     "html_broken_title": {
-        "message": "is broken"
+        "message": "bozuldu"
     },
     "html_broken_ruh_roh": {
         "message": "Ruh Roh!"
     },
     "html_broken_line1": {
-        "message": "failed to start. Perhaps you are using an incompatible version of Chrome?"
+        "message": "başlatılamadı. Belki de Chrome'un uyumsuz bir sürümünü kullanıyorsunuz?"
     },
     "html_broken_line2": {
-        "message": "Try to restart the extension. If the problem persists, ask for help on the"
+        "message": "Uzantıyı yeniden başlatmayı deneyin. Sorun devam ederse, şu adresten yardım isteyin:"
     },
     "html_broken_line2_github_page": {
-        "message": "GitHub project page"
+        "message": "GitHub proje sayfası"
     },
     "html_broken_line3": {
-        "message": "You can recover lost tabs from the"
+        "message": "Kayıp sekmeleri şuradan kurtarabilirsiniz:"
     },
     "html_broken_line3_session_management": {
-        "message": "session management page"
+        "message": "oturum yönetimi sayfası"
     },
     "html_broken_button_restart_extension": {
-        "message": "Restart extension"
+        "message": "Uzantıyı yeniden başlatın"
     },
     "html_history_title": {
         "message": "Oturum yönetimi"
@@ -213,7 +213,7 @@
         "message": "Otomatik sekmeyi askıya al"
     },
     "html_options_suspend_never": {
-        "message": "Hiç"
+        "message": "Asla"
     },
     "html_options_suspend_seconds": {
         "message": "saniye"
@@ -222,7 +222,7 @@
         "message": "dakika"
     },
     "html_options_suspend_minutes": {
-        "message": "saniye"
+        "message": "dakika"
     },
     "html_options_suspend_hour": {
         "message": "saat"
@@ -243,25 +243,25 @@
         "message": "hafta"
     },
     "html_options_suspend_no_pinned": {
-        "message": "Sabitlenmiş sekmeleri asla askıya al yapma"
+        "message": "Sabitlenmiş sekmeleri asla askıya alma"
     },
     "html_options_suspend_no_forms": {
-        "message": "Asla kaydedilmemiş form girişleri içeren sekmeleri askıya al yapma"
+        "message": "Asla kaydedilmemiş form girişleri içeren sekmeleri askıya alma"
     },
     "html_options_suspend_no_audio": {
-        "message": "Asla ses çalan sekmelere askıya al yapma"
+        "message": "Asla ses çalan sekmelere askıya alma"
     },
     "html_options_suspend_only_connected": {
-        "message": "Çevrimdışı olduğunda askıya al yapma"
+        "message": "Çevrimdışı olduğunda askıya alma"
     },
     "html_options_suspend_claim_by_default": {
         "message": "Claim by default (seamless migration; tab consider suspended if 'suspended.html' is in url)"
     },
     "html_options_suspend_only_on_battery": {
-        "message": "Güç kaynağına bağlı iken sekmeleri askıya al yapma"
+        "message": "Güç kaynağına bağlı iken sekmeleri askıya alma"
     },
     "html_options_suspend_no_active_tabs": {
-        "message": "Asla aktif penceredeki sekmeye askıya al yapma"
+        "message": "Asla aktif penceredeki sekmeye askıya alma"
     },
     "html_options_suspend_automatically_unsuspend": {
         "message": "Sekme görüntülendiğinde askısını kaldır"
@@ -273,7 +273,7 @@
         "message": "Askıya alınmış bir sekmenin bellek kullanımını daha da azaltarak"
     },
     "html_options_suspend_discard_after_suspend_tooltip_line1b": {
-        "message": "Chrome'un yerleşil 'sekme atma' özelliği. Bu sonuçlabilir"
+        "message": "Chrome'un yerleşik 'sekme atma' özelliği. Bu sonuçlabilir"
     },
     "html_options_suspend_discard_after_suspend_tooltip_line1c": {
         "message": "çok sayıda sekmeler ile çalışırken %500'e varan bellek tasarrufu."
@@ -417,13 +417,13 @@
         "message": "https://developers.google.com/web/updates/2015/09/tab-discarding"
     },
     "html_popup_unsuspend_tab": {
-        "message": "Bu sekmenin askısını kaldır"
+        "message": "Bu sekmeyi askıdan kaldır"
     },
     "html_popup_suspend_tab": {
         "message": "Bu sekmeyi askıya al"
     },
     "html_popup_dont_suspend_now": {
-        "message": "Şimdilik askıya almasını kaldır"
+        "message": "Şimdilik askıdan kaldır"
     },
     "html_popup_never_suspend_domain": {
         "message": "Bu alanadını hiçbir zaman askıya alma"
@@ -627,13 +627,13 @@
         "message": "Aşağıdaki ayarları hassas şekilde yapabilirsiniz."
     },
     "js_popup_normal": {
-        "message": "Otomatik sekmeyi askıya al."
+        "message": "Sekmeyi otomatik askıya al."
     },
     "js_popup_normal_pause": {
         "message": "Şimdi değil"
     },
     "js_popup_special": {
-        "message": "Askıya alınmadı"
+        "message": "Sekme askıya alınmadı"
     },
     "js_popup_suspended": {
         "message": "Sekme askıya alındı"
